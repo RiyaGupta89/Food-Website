@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+}
+
+.lists li {
+    padding-left: 2.2em;
+}
+
+.lists li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;  
+}
+
+.lists li a:hover {
+    border-bottom: 2px solid #cf6d17;
+    padding-bottom: 0.5em;
+}
+
+.btn-one {
+    margin-right: 1em;
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 1.5px solid #cf6d17;
+    color: #cf6d17;
+}
+
+.btn-outline:hover {
+    background-color: #cf6d17;
+    transition: all ease-out 1s;
+    color: #fff;
+}
+
+.buttons {
+    margin: 2em 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 28%;
+    
+}
+
+.burger {
+    display: none;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.2;
+    opacity: 1;
+}
+
+.header-text {
+    margin: 6em 0;
+}
+
+.header-text .btn {
+    font-size: 1.2rem;
+    
+    padding: 0.6em 1.5em;
+    border-radius: 45px;
+   
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1141px) {
+   .lists {
+    position: fixed;
+    background: #cf6d17;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease-out;
+    padding-top: 2em;
+    pointer-events: none;
+   }
+   .lists.open {
+        clip-path: circle(1010px at 90% -15%);
+        -webkit-clip-path: circle(1010px at 90% -15%);
+        pointer-events: all;
+   }
+   .lists li {
+       padding: 4em 0;
+   }
+   .lists li a {
+       font-size: 1.5rem;
+   }
+   .navbar {
+       padding: 0;
+       position: relative;
+   }
+   .line1, .line2, .line3 {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px;
+   }
+   .burger {
+       display: block;
+       position: absolute;
+       right: 2%;
+       cursor: pointer;
+       top: 45%;
+       transform: translate(-5%, -50%);
+   }
+   .logo {
+       padding: 1em 0;
+   }
+}
+
