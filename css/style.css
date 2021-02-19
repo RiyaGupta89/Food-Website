@@ -650,12 +650,12 @@ footer p {
         pointer-events: none;
    }
    .lists.open {
-        clip-path: circle(1050px at 90% -20%);
-        -webkit-clip-path: circle(1050px at 90% -20%);
+        clip-path: circle(750px at 90% -20%);
+        -webkit-clip-path: circle(750px at 90% -20%);
         pointer-events: all;
    }
    .lists li {
-       padding: 4em 0;
+       padding: 2em 0;
    }
    .lists li a {
        font-size: 1.5rem;
@@ -740,5 +740,41 @@ footer p {
     .work-img {
         width: 100%;
         text-align: center;
+    }
+    .container {
+        max-width: 97%;
+    }
+
+    .work {
+        padding: 4em 1em;
+    }
+
+    .testimonial-container {
+        padding: 5em 1.4em;
+    }
+
+    .testimonial-col:nth-child(1) i {
+        text-align: left;
+        display: block;
+        margin-left: 0.3em;
+    }
+
+    .testimonial-col:nth-child(2) i,
+    .testimonial-col:nth-child(3) i {
+        text-align: left;
+        display: block;
+        margin-left: -0.2em;
+    }
+
+    .container-1 {
+        max-width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 4em 1em;
     }
 }
