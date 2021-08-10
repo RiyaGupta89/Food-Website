@@ -17,6 +17,13 @@ The website, a landing page for Food Website is divided into the following secti
 * A footer section.
 
 
+# Project view
+
+![omnifood1](https://user-images.githubusercontent.com/72425181/128799796-0149ea3b-9b46-4982-8499-17ec88a2215e.jpg)
+
+![omnifood2](https://user-images.githubusercontent.com/72425181/128799800-49d26113-74c3-4a5d-9f10-569ca7c912e8.jpg)
+
+
 ## Setup/Installation Requirements
 
 To view the website, 
